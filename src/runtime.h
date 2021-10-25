@@ -1,8 +1,22 @@
-//
-// Created by Zack on 24/10/2021.
-//
+#pragma once
 
-#ifndef ALTV_SQUIRREL_MODULE_SRC_RUNTIME_H_
-#define ALTV_SQUIRREL_MODULE_SRC_RUNTIME_H_
+#include <SDK.h>
+#include <simplesquirrel.hpp>
 
-#endif //ALTV_SQUIRREL_MODULE_SRC_RUNTIME_H_
+class SquirrelRuntime : public alt::IScriptRuntime
+{
+	ssq::VM* vm;
+
+ public:
+	SquirrelRuntime();
+
+	alt::IResource::Impl* CreateImpl(alt::IResource* resource) override;
+	void DestroyImpl(alt::IResource::Impl* impl) override;
+
+
+	static SquirrelRuntime& Instance()
+	{
+		static SquirrelRuntime _instance;
+		return _instance;
+	}
+};
