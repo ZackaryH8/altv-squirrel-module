@@ -1,0 +1,1 @@
+altv-squirrel-module

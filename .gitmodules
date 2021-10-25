@@ -1,0 +1,6 @@
+[submodule "vendors/simplesquirrel"]
+	path = vendors/simplesquirrel
+	url = https://github.com/matusnovak/simplesquirrel
+[submodule "vendors/alt-sdk"]
+	path = vendors/alt-sdk
+	url = https://github.com/altmp/cpp-sdk
