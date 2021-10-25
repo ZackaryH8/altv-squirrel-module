@@ -1,7 +1,7 @@
 #pragma once
 
-#include <SDK.h>
-#include <simplesquirrel.hpp>
+#include <alt-sdk/SDK.h>
+#include <simplesquirrel/simplesquirrel.hpp>
 
 class SquirrelRuntime : public alt::IScriptRuntime
 {

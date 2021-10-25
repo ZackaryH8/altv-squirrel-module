@@ -3,5 +3,5 @@
 #define MODULE_TYPE "nut"
 
 // alt:V SDK
-#include "SDK.h"
+#include "alt-sdk/SDK.h"
 
